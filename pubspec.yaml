@@ -59,6 +59,8 @@ flutter:
   assets:
     - assets/images/fotop.png
     - assets/images/marco.png
+    - assets/images/marco.png
+    - assets/images/card.png
     
 
 

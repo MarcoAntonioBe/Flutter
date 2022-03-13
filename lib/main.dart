@@ -1,18 +1,21 @@
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:js';
 import 'package:flutter/material.dart';
+import 'package:prueba/formScreen.dart';
 import 'package:prueba/pruebaStack.dart';
+import 'package:prueba/formScreen.dart';
 
 void main() {
   runApp(MaterialApp(
+
     debugShowCheckedModeBanner: false,
     title: 'demo flutter',
     initialRoute: '/',
     routes: {
-      '/' : (context) => const HomePage(),
+      '/'       : (context) => MyStatefulWidget(),
       '/second' : (context) => const SecondScreen(),
-      '/datos' :(context) => const DatosPage(),
-        '/stack' :(context) => const PruebaStack(),
+      '/datos'  : (context) => const DatosPage(),
+        '/stack': (context) => const PruebaStack(),
       
 
     },
