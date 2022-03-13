@@ -1,7 +1,7 @@
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:js';
-
 import 'package:flutter/material.dart';
+import 'package:prueba/pruebaStack.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -11,7 +11,10 @@ void main() {
     routes: {
       '/' : (context) => const HomePage(),
       '/second' : (context) => const SecondScreen(),
-      '/datos' :(context) => const DatosPage()
+      '/datos' :(context) => const DatosPage(),
+        '/stack' :(context) => const PruebaStack(),
+      
+
     },
     //home: HomePage(),
   ));
@@ -68,12 +71,24 @@ class HomePage extends StatelessWidget{
                   onPressed: (){
                    /* final route = MaterialPageRoute(
                       builder: (context) => const SecondScreen(),
-              
                     );
                     */
                     Navigator.pushNamed(context, '/datos');
                   },
                   child: const Text('Datos'),
+                  
+                ),
+                ElevatedButton(
+                  
+                  onPressed: (){
+                   /* final route = MaterialPageRoute(
+                      builder: (context) => const SecondScreen(),
+              
+                    );
+                    */
+                    Navigator.pushNamed(context, '/stack');
+                  },
+                  child: const Text('Stack'),
                   
                 ),
                 ]
